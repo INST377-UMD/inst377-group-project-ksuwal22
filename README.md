@@ -29,8 +29,7 @@ To run the Food Search Web App locally, follow these steps:
  - `npm install nodemon`
  - `npm install @supabase/supabase-js`
 
-- 
-2. Run `npm init`
+4. Run `npm init`
    - Package name (curr directory): *hit enter*
    - Version (1.0.0): *hit enter*
    - Description: *dev’s choice*
@@ -41,13 +40,8 @@ To run the Food Search Web App locally, follow these steps:
    - License: ISC *hit enter*
    - Is this OK? (yes) *hit enter*
 
-#### Npm Commands
-- 
-  - Supabase client required field is included in line 3 of `index.js`
+5. Start the server:
+   `npm start` Should display "App is Runnig" is the app started successfully
+6. Open your browser and visit http://localhost:3000 to access the app.
 
-#### Final Configuration
-1. Once the above installations finish, access the `package.json` file.
-2. In this file, add (all excluding brackets) `<"start": "nodemon -e '*'",>` in the scripts section of the file (right below line 6).
-
-## API Docs
 
