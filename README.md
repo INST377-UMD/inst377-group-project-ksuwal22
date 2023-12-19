@@ -1,7 +1,7 @@
 # INST377-Final Project
 
 # Group members : Kabindra Raj Suwal
-Food Search Web App
+## Food Search Web App
 The Food Search Web App is a user-friendly application designed to provide quick access to detailed nutritional information for a wide range of food items. Whether you're health-conscious, a fitness enthusiast, a nutritionist, or simply interested in making informed dietary choices, this app aims to simplify the process of obtaining accurate and comprehensive nutritional data.
 
 Problem Statement
