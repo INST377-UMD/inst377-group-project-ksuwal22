@@ -16,8 +16,10 @@ Responsive Design: The app is designed to be responsive and accessible on deskto
 Node.js Backend: The backend is built on Node.js, leveraging JavaScript for efficient API development. Express is used for server capabilities, and Nodemon ensures automatic server restarts during development.
 
 Supabase Integration: Data management is handled through Supabase, a cloud-based database service, providing a reliable foundation for the storage and retrieval of information.
-# Developer Manual
 
+### Demo:
+Vedio demonstration: https://youtu.be/Qa475zLKIIc
+# Developer Manual
 ## Getting Started
 To run the Food Search Web App locally, follow these steps:
 
