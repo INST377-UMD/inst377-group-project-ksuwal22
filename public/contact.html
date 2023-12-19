@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .form{
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <header id="bar">
+        <h1>Food Search Web App</h1>
+    </header>
+
+    <nav id = "nav_bar">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="help.html">Help</a></li>
+        </ul>
+    </nav>
+
+    <h1>Contact Us</h1>
+
+    <div class = "form">
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="button" onclick="submitForm()">Submit</button>
+            </form>
+    <div>
+
+    <script>
+        function submitForm() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            // Validate form inputs
+            if (!name) {
+                alert('Please enter your name');
+                return;
+            } 
+            
+            else if (!validateEmail(email)) {
+                alert('Please enter a valid email address');
+                return;
+            }
+            
+            else if (!message) {
+                alert('Please enter your message');
+                return;
+            }
+            
+
+            // Create an object with form data
+            const formData = {
+                name: name,
+                email: email,
+                message: message
+            };
+
+            // Send the data to the server 
+            fetch('/contactFormSubmission', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            })
+            .then(response => response.json())
+            .then(data => {
+                alert('Form submitted successfully!');
+                // Optionally, you can redirect the user or perform other actions
+            })
+            .catch(error => {
+                console.error('Error submitting form:', error);
+                alert('An error occurred while submitting the form. Please try again.');
+            });
+        }
+
+        function validateEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+        
+    </script>
+
+</body>
+</html>
