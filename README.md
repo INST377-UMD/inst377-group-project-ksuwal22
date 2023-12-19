@@ -45,6 +45,7 @@ To run the Food Search Web App locally, follow these steps:
 5. Start the server:
    `npm start` Should display "App is Runnig" is the app started successfully
 6. Open your browser and visit http://localhost:3000 to access the app.
+7. press `ctrl+c` in terminal to terminate the app
 
 ## Technology Stack:
 - Frontend: JavaScript, HTML, CSS
