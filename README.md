@@ -1,5 +1,5 @@
-# inst377-Final Project
-# Group members 
+# INST377-Final Project
+### Group members 
 Kabindra Raj Suwal
 
 ## Food Search Web App
