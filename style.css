@@ -1,0 +1,49 @@
+body {
+    background-color: #f7f2eb;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+#bar {
+    text-align: center;
+    background-color: #764624;
+    color: rgb(255, 255, 255);
+    margin: 5px 0px 5px 0px;
+}
+#nav_bar {
+    background-color: #c07c1e;
+}
+
+#nav_bar ul li {
+    display: inline-block;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 20%;
+}
+
+#nav_bar ul li a {
+    color: white;;
+    text-decoration: none;
+}
+
+#nav_bar li:hover {
+    background-color: #764624;
+    color: white;
+    cursor: pointer;
+}
+
+#foodInfo {
+    text-align: center;
+}
+
+table {
+    margin: 0 auto; /* Center the table within the container */
+}
+
+.container{
+    width: 60%;
+    border: solid;
+    padding : 10px;
+    margin:auto
+}
