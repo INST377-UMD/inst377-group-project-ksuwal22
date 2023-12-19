@@ -23,21 +23,13 @@ To run the Food Search Web App locally, follow these steps:
 
 1. Clone the repository:
  `git clone https://github.com/your-username/food-search-web-app.git`
+2. Open the workspace’s `index.js` file.
+3. Install dependencies:
+ - `npm install express` This will add a `package-lock.json` and `package.json` files to your current directory. These contain the necessary dependencies to run Express. 
+ - `npm install nodemon`
+ - `npm install @supabase/supabase-js`
 
-### Nvm, npm, nodemon, express, supabase-js
-
-#### Libraries used 
-- Chart.JS
-
-#### Nvm commands
-1. Open terminal
-2. `nvm install node`
-3. Check installation with `nvm -v`
-   - Note: `nvm install node` should automatically install npm
-4. Check installation with `npm -v`
-
-#### Workspace Setup
-1. Now that nvm and npm are installed/configured, open the workspace’s `index.js` file.
+- 
 2. Run `npm init`
    - Package name (curr directory): *hit enter*
    - Version (1.0.0): *hit enter*
@@ -50,10 +42,7 @@ To run the Food Search Web App locally, follow these steps:
    - Is this OK? (yes) *hit enter*
 
 #### Npm Commands
-- `npm install express`
-  - This will add a `package-lock.json` and `package.json` files to your current directory. These contain the necessary dependencies to run Express.
-- `npm install nodemon`
-- `npm install @supabase/supabase-js`
+- 
   - Supabase client required field is included in line 3 of `index.js`
 
 #### Final Configuration
