@@ -18,7 +18,11 @@ Node.js Backend: The backend is built on Node.js, leveraging JavaScript for effi
 Supabase Integration: Data management is handled through Supabase, a cloud-based database service, providing a reliable foundation for the storage and retrieval of information.
 # Developer Manual
 
-## Installations and Configurations
+## Getting Started
+To run the Food Search Web App locally, follow these steps:
+
+1. Clone the repository:
+ `git clone https://github.com/your-username/food-search-web-app.git`
 
 ### Nvm, npm, nodemon, express, supabase-js
 
